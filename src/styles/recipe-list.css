@@ -1,3 +1,54 @@
+.overlay {
+    display: none;
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.85);
+}
+
+.overlay .modal {
+    position: relative;
+    width: 90%;
+
+    margin: 100px auto 0;
+    padding: 1rem;
+
+    background: #fff;
+}
+
+.overlay .modal .top {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.overlay .modal .top .fa-x {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.overlay .modal .top .fa-x:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.overlay .modal .ingred-item .ingred-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+}
+
+.overlay .modal .buttons {
+    margin-top: 2rem;
+}
+
+.overlay .modal .buttons .btn {
+    margin-bottom: .5rem;
+}
+
+
 .recipe-list-container {
     width: 100%;
     text-align: center;
@@ -14,10 +65,21 @@
 
 .recipe-list-container .recipe-items .recipe-item {
     padding: 0.5rem 0;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 
     font-size: 1.5rem;
 
     background: #d9d9d9;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.recipe-list-container .recipe-items .recipe-item:hover {
+    opacity: .75;
+    cursor: pointer;
+}
+
+.recipe-list-container .btn {
+    background: #54F42D;
+    background: linear-gradient(90deg, rgba(84, 244, 45, 1) 67%, rgba(49, 142, 26, 1) 100%);
+    box-shadow: 1px 1px 4px 5px rgba(20, 254, 55, 0.25);
 }

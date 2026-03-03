@@ -2,68 +2,81 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>recipe-app</title>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="./src/styles/recipe-list.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>recipe-list</title>
 </head>
 
 <body>
-  <div class="recipe-ingreds">
-    <i class="fa-solid fa-x"></i>
-    <h1 class="title-1">recipe ingreds</h1>
+    <!-- ========== overlay ========== -->
+    <div class="overlay">
+        <div class="modal">
+            <!-- top -->
+            <div class="top">
+                <i class="fa-solid fa-x"></i>
+                <h3>change an ingredient</h3>
+            </div><!--./top-->
 
-    <!-- ============== ingred items ============== -->
-    <a class="ingred-item" href="./recipe list.html">
-      <span class="ingred-unit">Unit</span>
-      <span class="ingred-quantity">Quantity</span>
-      <span class="ingred-name">ingredient Name</span>
-    </a><!--./ingred-item-->
+            <!-- ingred-item -->
+            <div class="ingred-item">
 
-    <div class="ingred-item">
-      <span class="ingred-unit">Unit</span>
-      <span class="ingred-quantity">Quantity</span>
-      <span class="ingred-name">ingredient Name</span>
-    </div><!--./ingred-item-->
+                <div class="ingred-field ingred-field-name">
+                    <label for="ingred-name">ingredient name</label>
+                    <input type="text" id="ingred-name" name="name" placeholder="enter ingrdient name">
+                </div><!--./ingred-field-name-->
 
-    <div class="ingred-item">
-      <span class="ingred-unit">Unit</span>
-      <span class="ingred-quantity">Quantity</span>
-      <span class="ingred-name">ingredient Name</span>
-    </div><!--./ingred-item-->
+                <div class="ingred-field ingred-field-quantity">
+                    <label for="ingred-quantity">ingredient quantity</label>
+                    <input type="number" min="0" step="0.1" id="ingred-quantity" name="quantity"
+                        placeholder="enter ingrdient quantity">
 
-    <div class="ingred-item">
-      <span class="ingred-unit">Unit</span>
-      <span class="ingred-quantity">Quantity</span>
-      <span class="ingred-name">ingredient Name</span>
-    </div><!--./ingred-item-->
+                </div><!--./ingred-field-quantity-->
 
-    <div class="ingred-item">
-      <span class="ingred-unit">Unit</span>
-      <span class="ingred-quantity">Quantity</span>
-      <span class="ingred-name">ingredient Name</span>
-    </div><!--./ingred-item-->
+                <div class="ingred-field ingred-field-unit">
+                    <label for="ingred-unit">ingredient unit</label>
+                    <select name="unit" id="ingred-unit">
+                        <option value="LTR">LTR</option>
+                        <option value="KGM">KGM</option>
+                        <option value="PCS">PCS</option>
+                    </select>
+                </div><!--./ingred-field-unit-->
+            </div><!--./ingred-item-->
 
-    <div class="ingred-item">
-      <span class="ingred-unit">Unit</span>
-      <span class="ingred-quantity">Quantity</span>
-      <span class="ingred-name">ingredient Name</span>
-    </div><!--./ingred-item-->
+            <!-- buttons -->
+            <div class="buttons">
+                <button class="btn">save</button>
+                <button class="btn btn-close">close</button>
+                <button class="btn btn-delete">delete ingredient</button>
+            </div><!--./buttons-->
+        </div><!--./modal-->
+    </div><!--./overlay-->
 
-    <div class="ingred-item">
-      <span class="ingred-unit">Unit</span>
-      <span class="ingred-quantity">Quantity</span>
-      <span class="ingred-name">ingredient Name</span>
-    </div><!--./ingred-item-->
-
-    <div class="ingred-item">
-      <span class="ingred-unit">Unit</span>
-      <span class="ingred-quantity">Quantity</span>
-      <span class="ingred-name">ingredient Name</span>
-    </div><!--./ingred-item-->
-
-  </div><!--./recipe-ingreds-->
-  <script type="module" src="/src/main.js"></script>
+    <!-- ========== recipe-list-container ========== -->
+    <div class="recipe-list-container">
+        <h1 class="title-1">Recipe List</h1>
+        <div class="recipe-items">
+            <a class="recipe-item d-b" href="./recipe ingreds.html">
+                recipe-item
+            </a><!--./recipe-item-->
+            <div class="recipe-item">
+                recipe-item
+            </div><!--./recipe-item-->
+            <div class="recipe-item">
+                recipe-item
+            </div><!--./recipe-item-->
+            <div class="recipe-item">
+                recipe-item
+            </div><!--./recipe-item-->
+            <div class="recipe-item">
+                recipe-item
+            </div><!--./recipe-item-->
+        </div><!--./recipe-items-->
+        <a href="./add recipe.html" class="btn">add recipe</a>
+    </div>
+    <script type="module" src="/src/main.js"></script>
 </body>
 
 </html>
