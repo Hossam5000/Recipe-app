@@ -1,6 +1,6 @@
 // imports
 // >> css files and libs
-import './style.css';
+import './styles/style.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 // vars & cons

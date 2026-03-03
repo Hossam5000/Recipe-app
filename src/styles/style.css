@@ -1,0 +1,71 @@
+    /* global */
+    :root {
+      --m-3: 1rem;
+      --m-4: 1.5rem;
+      --m-5: 2rem;
+    }
+
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+
+      font-family: sans-serif;
+    }
+
+    body {
+      font-size: 1.25rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: initial;
+    }
+
+    .recipe-ingreds {
+      padding: 1rem;
+    }
+
+    .recipe-ingreds .fa-x {
+      display: block;
+      margin-left: auto;
+      margin-bottom: var(--m-3);
+      width: 24px;
+      height: 24px;
+      line-height: 24px;
+    }
+
+    .recipe-ingreds .fa-x:hover {
+      cursor: pointer;
+      opacity: 0.5;
+    }
+
+    .recipe-ingreds .title-1 {
+      text-align: center;
+      margin: 0 0 var(--m-5);
+    }
+
+    .recipe-ingreds .ingred-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      padding: 0.5rem;
+      margin: var(--m-3) 0;
+
+      border: 1px solid #000;
+      box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.25);
+    }
+
+    .recipe-ingreds .ingred-name {
+      flex: 2;
+      text-align: right;
+    }
+
+    .recipe-ingreds .ingred-quantity {
+      flex: 1;
+    }
+
+    .recipe-ingreds .ingred-unit {
+      flex: 1;
+    }
